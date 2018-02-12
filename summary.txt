@@ -1,0 +1,17 @@
+Project name: Mini Yelp
+
+Description: this is a restaurant recommendation web that can search restaurants near your location, let you check/uncheck restautants you have visited, see your visit history and give you recommendations.
+
+The data is based on real Yelp data base. The api key we have been using is Yelp API v2 key. Basically whenever the user opens the browser, its geolocation will be extracted and we further use it as a query parameter to search the restaurants nearby. Whenever the user visit a restaurant, its userID together with the restaurant he visited will be saved to a relational database called history with the exact attributes. Based on the local database info, item-based recommendation algorithm will further be employed to recommend restaurant to a user.
+
+The user authorization management is based on md5, which does hashing on password first, then does hashing on the user name and hashed password for better security.
+
+There are several data structures used, like ArrayList, HashSet, PriorityQueue and JSONArray.
+
+There are several design patterns used, like Facade, Factory method and Iterator.
+
+Yiwei Guo did the front end design, server implementation, deployment, MySQL data base implementation and other classes implementation.
+
+Gongyao Chen did the UML diagrams design, interfaces design, other classes implementation and tried to learn and implement MongoDB.
+
+Link to github repo: https://github.com/cit-upenn/594-s17-project-miniyelp
